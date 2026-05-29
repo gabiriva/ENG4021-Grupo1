@@ -1,0 +1,9 @@
+rom django.db import models
+
+class Exercicio(models.Model):
+    nome = models.CharField(max_length=100)
+    duracao = models.IntegerField()
+    instrucoes = models.TextField()
+
+    def _str_(self):
+        return self.nome
